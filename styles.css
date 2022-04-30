@@ -143,8 +143,7 @@
   .input-customizado input{
     outline: none;
     border: 0;
-    padding: 20px 0;
-    
+    padding: 20px 0;    
     flex: 1;
   }
   .input-customizado img{
