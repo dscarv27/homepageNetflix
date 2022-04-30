@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body{
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .content{
+    position: relative;
+    width: 50%;
+    padding: 60px 40px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;    
+    height: 100%;
+    background: #000;    
+  }
+  
+  
+  .img-background img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    opacity: 0.6;    
+  }
+
+  .banner{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+  
+  
+  @keyframes subir{
+    0%{
+      bottom: -60px;
+      transform: rotate(0);
+      border-radius: 0;
+      left: 0;
+      background: #FF000D;
+    }
+    100%{
+      bottom: 120%;
+      transform: rotate(360deg);
+      border-radius: 50%;
+      left: 100%;
+      background: blue;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .banner{
+      display: none;
+    }
+    .content{
+      width: 100%;
+      overflow: initial;
+    }
+    .container{
+      height: initial;
+    }
+  }
+
+  header{
+    text-align: center;
+  }
+  main h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 40px ;
+  }
+  .main-form{
+    max-width: 380px;
+    width: 100%;
+  }
+  main form{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 10px 0;
+  }
+
+  main a{
+    text-align: right;
+    color: #fff;
+    opacity: 0.46;
+  }
+
+  main form button{
+    background: #FF000D;
+    color: #fff;
+    padding: 15px 10px;
+    font-size: 26px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 6px;
+  }
+  
+  .input-container label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 19px;
+    color: #fff;
+    text-align: left;
+  
+  }
+  .input-customizado{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    padding:  0 20px;
+    
+    
+  }
+  .input-customizado input{
+    outline: none;
+    border: 0;
+    padding: 20px 0;
+    
+    flex: 1;
+  }
+  .input-customizado img{
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  footer .others-login {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  
+  }
+  footer .others-login span{
+    margin: 0 16px;
+    font-size: 15px;
+    color: #fff;
+  
+  }
+  footer .others-login hr{
+    /* height: 1px; */
+    flex: 1;
+    border-bottom: 1px solid #fff;  
+  
+  }
+  .others-login-companies{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .others-login-companies img{
+    cursor: pointer;
+  }
+  
+  footer p{
+    font-weight: 700;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+  }
+  footer p a{
+    color: #FF000D;
+    text-decoration: none;
+    font-size: 15px;
+  }
